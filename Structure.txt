@@ -1,0 +1,20 @@
+ BAG REPORT'S STRUCTURE
+
+№:
+Bug name:
+
+Description:
+Assigne to:
+
+Severity: (Blocker, Critical, Major, Minor, Trivial)
+Priority: (High, Medium, Low)
+
+Steps to reproduce:
+Website link:
+
+Expected Result:
+Actual  Result:
+
+Attachments:
+Comments:
+
