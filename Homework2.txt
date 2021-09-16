@@ -1,0 +1,32 @@
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+
+Решение:
+
+curl 'http://162.55.220.72:5005/object_info_3?name=Vadimage-32&salary-1000 \
+
+-H "Connection: keep-alive' \
+
+-H 'Pragma: no-cache\
+
+-H Cache-Control: no-cache\
+
+-H 'Upgrade-Insecure-Requests: 1' \
+
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Applewebkit/537.36 (KHTML, Like Gecko) Chrome/92.0.4515.159 Safari/537.365
+
+-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9, image/avif, image/webp, image/apng,/;q=0.8,application/signed-exchange;
+
+-b3;q=0.9¹ \
+
+-H 'Accept-Language: en-US,en;q=0.9 \
+
+--compressed \
+
+--insecure
+
+Ответ:
+
+["age": "32","family":("children": [["Alex", 241, ["Kate", 1211, "pets":["cat":{"age":3,"name":"Sunny"), "dog":"age":4,"name":"Luky")), "u salary_
+_5_year":4000], "name": "Vadim", "salary":1000)
