@@ -1,4 +1,4 @@
- BAG REPORT'S STRUCTURE
+  BAG REPORT'S STRUCTURE
 
 №:
 Bug name:
