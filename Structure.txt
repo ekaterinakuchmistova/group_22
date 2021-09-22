@@ -1,7 +1,7 @@
   BAG REPORT'S STRUCTURE
 
 №:
-Bug name:
+Bug title:
 
 Description:
 Assigne to:
