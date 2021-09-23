@@ -1,6 +1,5 @@
 # 1)Create variable of type String
 
-
 a = 'hello'
 print(type(a))  # <class 'str'>
 print(a)
