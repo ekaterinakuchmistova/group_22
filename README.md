@@ -1,6 +1,6 @@
 # DevTools HW1
-https://youtu.be/-D4E2l7xX-Q
 
+https://www.youtube.com/watch?v=-D4E2l7xX-Q
 Devtools HW
 
 Сделать скрин видео выполнения задания.
