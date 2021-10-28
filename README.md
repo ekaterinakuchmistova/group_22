@@ -7,7 +7,7 @@
 Host: 159.69.151.133
 Port: 5056
 User: user_22_x
-Pass: 123
+Pass: ***********
 Table: qa_users
 ```
 
