@@ -1,5 +1,8 @@
 # SQL HW_1
-Подключится к 
+
+![DBeaver 21 2 3 -  qa_db_2 1  Script 2021-10-28 22-57-30](https://user-images.githubusercontent.com/90832725/139301441-e7963719-74af-4643-a9da-e92fd88a641c.png)
+
+Подключится к:
 ```sh
 Host: 159.69.151.133
 Port: 5056
