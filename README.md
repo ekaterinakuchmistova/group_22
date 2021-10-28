@@ -1,7 +1,5 @@
 # DevTools HW1
-# <a href="http://www.youtube.com/watch?feature=player_embedded&v=https://youtu.be/-D4E2l7xX-Q" target="_blank"><img src="http:/DevTools HW1/img.youtube.com/vi/https://youtu.be/-D4E2l7xX-Q/0.jpg" 
-alt="" width="240" height="180" border="10" /></a>
-
+# ![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/-D4E2l7xX-Q)
  1. Открыть Chrome DevTools
  2. Зайти в панель Elements.
  3. Найти инспектором кнопку Submit и выровнять слово Submit по центру
