@@ -1,8 +1,6 @@
 # DevTools HW1
 
-https://youtu.be/-D4E2l7xX-Q
-
-Сделать скрин видео выполнения задания.
+# https://youtu.be/-D4E2l7xX-Q
 
  1. Открыть Chrome DevTools
  2. Зайти в панель Elements.
