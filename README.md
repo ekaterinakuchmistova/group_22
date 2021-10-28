@@ -1,5 +1,6 @@
 # DevTools HW1
-# [![ALT-DevTools HW1](http://img.youtube.com/vi/https://youtu.be/-D4E2l7xX-Q/0.jpg)](http://www.youtube.com/watch?v=https://youtu.be/-D4E2l7xX-Q)
+# <a href="http://www.youtube.com/watch?feature=player_embedded&v=https://youtu.be/-D4E2l7xX-Q" target="_blank"><img src="http:/DevTools HW1/img.youtube.com/vi/https://youtu.be/-D4E2l7xX-Q/0.jpg" 
+alt="" width="240" height="180" border="10" /></a>
 
  1. Открыть Chrome DevTools
  2. Зайти в панель Elements.
