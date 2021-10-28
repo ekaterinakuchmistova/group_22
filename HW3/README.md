@@ -1,6 +1,7 @@
-#SQL HW3
+### SQL HW3
 
 # https://drawsql.app/group_22/diagrams/hw3
+
 ![drawSQL-export-2021-10-29_00_43](https://user-images.githubusercontent.com/90832725/139316519-6dbaabc8-7b85-40cc-b1ef-d621f44c55be.png)
 
 ```sh --1. Создайте базу из представленной картинки.
