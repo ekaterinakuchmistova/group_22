@@ -1,5 +1,5 @@
 # DevTools HW1
-# [![Watch the video](https://youtu.be/-D4E2l7xX-Q?list=PLR92raVHJYcOsGlH3RmYQmhpN4uOqk826&t=22.png)](https://youtu.be/-D4E2l7xX-Q)
+# [![Watch the video](hhttps://img.youtube.com/vi/<https://youtu.be/-D4E2l7xX-Q?list=PLR92raVHJYcOsGlH3RmYQmhpN4uOqk826&t=22>/maxresdefault.jpg)](https://youtu.be/-D4E2l7xX-Q)
 
  1. Открыть Chrome DevTools
  2. Зайти в панель Elements.
