@@ -48,4 +48,5 @@ FOREIGN KEY (sales_manager)REFERENCES employees (id) );`
 
 
 
-![DBeaver 21 2 3 - public 2021-10-29 01-09-40](https://user-images.githubusercontent.com/90832725/139320263-34d04436-418d-497b-a1fe-9b71281814f8.png)
+![DBeaver 21 2 3 - public 2021-10-29 17-23-44](https://user-images.githubusercontent.com/90832725/139426631-84940e6b-db8b-440f-8f3b-0fc57a6d843b.png)
+
