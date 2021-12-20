@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "9c232610-9c64-47c1-8376-5a50fcc8d8c0",
+		"name": "New Collection2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/first",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}login",
+					"host": [
+						"{{url}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"//. Спарсить response body в json.",
+							"",
+							"    var jsonData = pm.response.json();",
+							"var jsonRequest = request.data",
+							"    // Проверить, что name в ответе равно name s request (name вбить руками.)",
+							"",
+							"pm.test(\"Correct name\", function () { ",
+							"    pm.expect(jsonData.name).is.to.eql(\"vova\"); ",
+							"});",
+							"// Проверить, что age в ответе равно age s request (age вбить руками.)",
+							"pm.test(\"Correct age\", function () { ",
+							"    pm.expect(jsonData.age).is.to.eql(\"23\"); ",
+							"});",
+							"pm.test(\"Correct salary\", function () { ",
+							"    pm.expect(jsonData.salary).is.to.eql(2000); ",
+							"});",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"//Проверить, что name в ответе равно name s request (name забрать из request.)",
+							"",
+							"let sasha  = jsonRequest.name;",
+							"let vova = jsonData.name;",
+							"pm.test(\"check name\", function() {",
+							"pm.expect(sasha).to.eql(vova);",
+							"});",
+							"console.log(sasha);",
+							"",
+							"let moron = jsonRequest.age;",
+							"let it = jsonData.age;",
+							"pm.test(\"check age\", function() {",
+							"    pm.expect(moron).to.eql(it);",
+							"}",
+							");",
+							"console.log(moron);",
+							"",
+							"let start = jsonRequest.salary;",
+							"let tree = jsonData.salary;",
+							"pm.test(\"check salary\", function()",
+							"{pm.expect(start).to.eql(\"2000\")});",
+							"",
+							"//Вывести в консоль параметр family из response.",
+							"",
+							"console.log(jsonData.family);",
+							"//Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)",
+							"let start1 = jsonRequest.salary;",
+							"let tree1 = jsonData.family.u_salary_1_5_year;",
+							"pm.test(\"check u_salary_1_5_year\", function()",
+							"{pm.expect(jsonData.family.u_salary_1_5_year).to.eql(8000)});",
+							"",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "vova",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}user_info_3",
+					"host": [
+						"{{url}}user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_info_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//2. Статус код 200",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"//3. Спарсить response body в json.",
+							"const RespJson = pm.response.json();",
+							"//4. Спарсить request.",
+							"const ReqJson = pm.request.url.query.toObject();",
+							"//5. Проверить, что name в ответе равно name s request (name забрать из request.)",
+							"let RespN = RespJson.name;",
+							"let ReqN = ReqJson.name;",
+							"pm.test(\"Check name\", function() {",
+							"    pm.expect(RespN.name).to.eql(ReqN.name);",
+							"});",
+							"//6. Проверить, что age в ответе равно age s request (age забрать из request.)",
+							"let RespN1 = RespJson.age;",
+							"let ReqN1 = ReqJson.age;",
+							"pm.test(\"Check age\", function() {",
+							"    pm.expect(ReqN1.age).to.eql(RespN1.age);});",
+							"    ",
+							"//7. Проверить, что salary в ответе равно salary s request (salary забрать из request.)",
+							"let RespN2 = RespJson.salary;",
+							"let ReqN2 = ReqJson.salary;",
+							"pm.test(\"Check salary\", function() {",
+							"    pm.expect(ReqN2.salary).to.eql(RespN2.salary);});",
+							"//8. Вывести в консоль параметр family из response",
+							"console.log(RespJson.family);",
+							"//9. Проверить, что у параметра dog есть параметры name.",
+							"pm.test(\"Checking property name\", function(){",
+							"pm.expect(RespJson.family.pets.dog).to.have.property(\"name\")",
+							"});",
+							"//10. Проверить, что у параметра dog есть параметры age.",
+							"pm.test(\"Checking property age\", function(){",
+							"pm.expect(RespJson.family.pets.dog).to.have.property(\"age\")",
+							"});",
+							"//11. Проверить, что параметр name имеет значение Luky.",
+							"pm.test(\"Checking property Luky\", function(){",
+							"pm.expect(RespJson.family.pets.dog.name).to.eql(\"Luky\")",
+							"});",
+							"//12. Проверить, что параметр age имеет значение 4.",
+							"pm.test(\"Checking property 4\", function(){",
+							"pm.expect(RespJson.family.pets.dog.age).to.eql(4)",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}object_info_3?name=Katrin&age=25&salary=1500",
+					"host": [
+						"{{url}}object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Katrin"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						},
+						{
+							"key": "salary",
+							"value": "1500"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
